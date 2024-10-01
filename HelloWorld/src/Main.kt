@@ -35,17 +35,59 @@ fun main() {
 
     // MAP
 
-    val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
-    println(readOnlyJuiceMenu)
+//    val readOnlyJuiceMenu = mapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+//    println(readOnlyJuiceMenu)
+//
+//    val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
+//    println(juiceMenu)
+//
+//    juiceMenu["coconut"] = 150
+//    juiceMenu.remove("orange")
+//    println(juiceMenu)
+//
+////    println(readOnlyJuiceMenu.containsKey("kiwi"))
+//
+//    println(200 in readOnlyJuiceMenu.values)
 
-    val juiceMenu: MutableMap<String, Int> = mutableMapOf("apple" to 100, "kiwi" to 190, "orange" to 100)
-    println(juiceMenu)
+    fun main(){
 
-    juiceMenu["coconut"] = 150
-    juiceMenu.remove("orange")
-    println(juiceMenu)
+        //If
 
-//    println(readOnlyJuiceMenu.containsKey("kiwi"))
+        val d : Int
+        val check = true
 
-    println(200 in readOnlyJuiceMenu.values)
+        if(check){
+            d = 1
+        } else {
+            d = 2
+        }
+
+        println(d)
+        }
+
+    //When
+
+    val obj = "Hello"
+
+    when(obj) {
+        "1" -> println("One")
+        "Hello" -> println("Greeting")
+        else -> println("Unknown")
+    }
+
+    //For
+
+    for (number in 1..5){
+        println(number)
+    }
+
+    val cakes = listOf("carrot","cheese","chocolate")
+
+    for(cake in cakes){
+        println("Yummy, it's a $cake cake!")
+    }
+
+
+
+
 }
